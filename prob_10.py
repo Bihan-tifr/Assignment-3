@@ -14,13 +14,13 @@ for i in range(N):
 bins = 20
 fig=plt.figure()
 plt.subplot(2,2,1)
-plt.plot(x,w,'purple',label='Plotting of the measurements vs time(say)')
+plt.plot(x,w,'blue')
 plt.xlabel(r't',fontsize=15)
 plt.ylabel(r'f',fontsize=15)
 plt.grid(True)
 
 plt.subplot(2,2,2)
-plt.plot(k,nft,'teal')
+plt.plot(k,nft,'green')
 plt.xlabel(r'$\omega$',fontsize=16)
 plt.ylabel(r'$f(\omega)$',fontsize=16)
 
@@ -31,11 +31,10 @@ plt.plot(k,power_spec,'cyan')
 
 plt.xlabel(r'$\omega$',fontsize=16)
 plt.ylabel(r'$|f(\omega)|^2$',fontsize=16)
-#plt.ylim((0.0,0.00001))
 plt.grid(True)
 
 plt.subplot(2,2,4)
-plt.hist(power_spec,bins, facecolor='salmon')
+plt.hist(power_spec,bins, facecolor='red')
 plt.xlabel(r'$\omega$',fontsize=16)
 plt.ylabel(r'$|f(\omega_{binned})|^2$',fontsize=16)
 
